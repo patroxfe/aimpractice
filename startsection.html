@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIM Practice by patrox</title>
+    <link rel="icon" href="./img/logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://kit.fontawesome.com/a8cdfdfd29.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="wrapper">
+            <div class="nav-items">
+                <div class="nav-logo">
+                    <img src="./img/logo.png" alt="">
+                    <h1>Aim <span>practice</span></h1>
+                </div>
+                <div class="nav-controls">
+                    <p class="how2play btn">How to play</p>
+                    <p class="sensitivity btn">Sensitivity</p>
+                    <p class="faq btn">FAQ</p>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="welcome">
+        <div class="wrapper">
+            <div class="welcome-content">
+                <h2>Improve your aim and reflex using <span>AIM</span> <span>PRACTICE</span> </h2>
+                <h2 class="block-action">Current version is available for wider screens!</h2>
+                <a href="gameselect.html"><i class="fa-solid fa-play"></i> Play!</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-shadow"></div>
+    <div class="popup first">
+        <div class="xmark">
+            <img src="./img/xmark.png" alt="" id="close">
+        </div>
+        <div class="header">
+            <h3>How to play</h3>
+        </div>
+        <div class="content">
+            <p class="about-reflex">
+                <strong>Reflex - </strong>
+                A reliable script checks your reaction time, which translates into a scale:
+                <span>0-220ms</span>
+                <span>221-400ms</span>
+                <span>401ms+</span>
+            </p>
+
+            <p class="about-aim">
+                <strong>Aim Practice - </strong>
+                It consists in clicking the pink dots as quickly and efficiently as possible. My system calculates your
+                points based on the time it takes to hit the next dot and your accuracy.
+            </p>
+        </div>
+    </div>
+    <div class="popup second">
+        <div class="xmark">
+            <img src="./img/xmark.png" alt="" id="close">
+        </div>
+        <div class="header">
+            <h3>Sensitivity</h3>
+        </div>
+        <div class="content">
+            <p>Currently working on a clear and functional script for changing the sensitivity in focus mode
+                <strong>[F11]</strong> to convert your sensitivity from games like CS:GO, Valorant etc.
+            </p>
+        </div>
+    </div>
+    <div class="popup third">
+
+        <img src="./img/xmark.png" alt="" id="close">
+
+        <div class="header">
+            <h3>FAQ</h3>
+        </div>
+        <div class="content">
+            <p>The site is currently in beta version.
+                Due to the fact that I am a beginner, there may be a few errors and bugs in the app.</p>
+        </div>
+    </div>
+
+    <div class="wave">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fe2464" fill-opacity="1"
+                d="M0,256L48,240C96,224,192,192,288,192C384,192,480,224,576,218.7C672,213,768,171,864,165.3C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
+            </path>
+        </svg>
+    </div>
+
+    <script src="./js/aimpractice.js"></script>
+</body>
+
+</html>

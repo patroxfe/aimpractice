@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIM Practice by patrox</title>
+    <link rel="icon" href="./img/logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/game.css">
+    <script src="https://kit.fontawesome.com/a8cdfdfd29.js" crossorigin="anonymous"></script>
+</head>
+
+<br>
+
+
+<a href="startsection.html">
+    <div class="nav-logo">
+        <img src="./img/logo.png" alt="">
+        <h1>Aim <span>practice</span></h1>
+    </div>
+    <a href="gameselect.html">
+        <i class="fa-solid fa-gear"></i>
+    </a>
+</a>
+
+<div class="click-area starting">
+    <p class="text">CLICK TO START</p>
+</div>
+
+<div class="click-area waiting">
+    <p class="text">WAIT FOR GREEN...</p>
+</div>
+
+<div class="click-area click">
+</div>
+
+<div class="result">
+    <p>Your time: <span class="time">225ms</span></p>
+
+</div>
+
+<p class="guide">HIT GREEN WINDOW <span class="guide-count">5</span> MORE TIMES</p>
+
+<div class="popup-shadow" onclick="location.reload();"></div>
+<div class="results">
+    <div class="xmark" onclick="location.reload();">
+        <img src="./img/xmark.png" alt="" id="close">
+    </div>
+    <div class="header">
+        <h3>Results</h3>
+    </div>
+    <div class="content">
+        <ul class="results-ul">
+        </ul>
+        <p>Your average result: <span class="avg-result"></span> </p>
+    </div>
+</div>
+
+<h2 class="block-action">Current version is available for wider screens!</h2>
+
+<script src="./js/reflex.js"></script>
+</body>
+
+</html>

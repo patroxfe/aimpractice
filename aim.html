@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIM Practice by patrox</title>
+    <link rel="icon" href="./img/logo2.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/game.css">
+    <script src="https://kit.fontawesome.com/a8cdfdfd29.js" crossorigin="anonymous"></script>
+</head>
+
+<br>
+
+
+<a href="startsection.html">
+    <div class="nav-logo">
+        <img src="./img/logo.png" alt="">
+        <h1>Aim <span>practice</span></h1>
+    </div>
+    <a class="settings" href="gameselect.html">
+        <i class="fa-solid fa-gear"></i>
+    </a>
+</a>
+
+
+
+<div class="score-aim">
+    <p class="hits"><span class="hits-count">0</span></p>
+    <p class="miss"><span class="miss-count">0</span></p>
+    <p class="left"><span class="left-count">0</span></p>
+    <p class="stopwatch">0s</p>
+</div>
+
+<div class="choose-level-container">
+    <div class="choose-level">
+        <h3>CHOOSE LEVEL</h3>
+        <div class="levels">
+            <div class="easy level">
+                <h4 class="easy-h4">EASY</h4>
+                <ul>
+                    <li><span>40-65px</span> dots</li>
+                    <li class="soon"><span>2.5 seconds</span> to click on next dot</li>
+                    <li class="soon"><span>75 clicks</span> to see your result</li>
+                </ul>
+            </div>
+            <div class="medium level">
+                <h4 class="medium-h4">MEDIUM</h4>
+                <ul>
+                    <li><span>30-45px</span> dots</li>
+                    <li class="soon"><span>1.5 seconds</span> to click on next dot</li>
+                    <li class="soon"><span>100 clicks</span> to see your result</li>
+                </ul>
+            </div>
+            <div class="hard level">
+                <h4 class="hard-h4">HARD</h4>
+                <ul>
+                    <li><span>15-30px</span> dots</li>
+                    <li class="soon"><span>1 second</span> to click on next dot</li>
+                    <li class="soon"><span>100 clicks</span> to see your result</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button class="play-btn"><i class="fa-solid fa-play"></i> Play!</button>
+
+<h2 class="block-action">Current version is available for wider screens!</h2>
+<div class="circles">
+    <div class="circle static"></div>
+</div>
+
+<div class="popup-shadow"></div>
+<div class="results-aim">
+    <div class="xmark" onclick="location.reload();">
+        <img src="./img/xmark.png" alt="" id="close">
+    </div>
+    <div class="header">
+        <h3>Results</h3>
+    </div>
+    <div class="content">
+        <p>Time:<span class="results-time"></span></p>
+        <p>Hits:<span class="results-hits"></span></p>
+        <p>Miss:<span class="results-miss"></span></p>
+        <p>Accuracy:<span class="results-accuracy"></span></p>
+        <p>Score:<span class="results-score"></span></p>
+    </div>
+
+
+    <script src="./js/aim.js"></script>
+    </body>
+
+</html>

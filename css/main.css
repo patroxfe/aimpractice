@@ -1,0 +1,274 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: #1d1d1d;
+  height: 100vh;
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  position: absolute;
+  width: 100%;
+  padding: 3em 0;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  transition: animation 0.3s;
+  cursor: pointer;
+}
+.nav-logo img {
+  width: 4em;
+  margin-right: 1.5em;
+}
+.nav-logo span {
+  font-weight: 400;
+}
+.nav-logo h1 {
+  font-size: 1.4rem;
+  color: #fe2464;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.nav-logo:hover {
+  animation: logo 2s alternate infinite;
+}
+
+.welcome .welcome-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.welcome .welcome-content h2 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 200;
+  margin-bottom: 1em;
+}
+.welcome .welcome-content h2 span:first-child {
+  color: #fe2464;
+  font-weight: bold;
+}
+.welcome .welcome-content h2 span:last-child {
+  color: #fe2464;
+  font-weight: 400;
+}
+.welcome .welcome-content a {
+  padding: 0.5em 1em;
+  background: none;
+  border: none;
+  color: #fe2464;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: 3px solid #fe2464;
+  border-radius: 0.5em;
+  text-decoration: none;
+  transition: 0.3s;
+  z-index: 1;
+}
+.welcome .welcome-content a:hover {
+  color: #fff;
+  border-color: #fff;
+  scale: 1.1;
+}
+
+.popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  border: 1px solid #fe2464;
+  border-radius: 2em;
+  background-color: #111;
+  overflow: hidden;
+  box-shadow: 0px 0px 50px rgba(254, 36, 101, 0.4196078431);
+  filter: opacity(0.98);
+  z-index: 1000;
+  animation: showPopup 0.5s;
+  z-index: 5;
+}
+.popup img {
+  position: absolute;
+  right: 5px;
+  width: 40px;
+  cursor: pointer;
+}
+.popup .header {
+  padding: 1.5em 0;
+  background-color: #fe2464;
+}
+.popup .header h3 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  z-index: 100;
+}
+.popup .content {
+  padding: 3em;
+}
+.popup .content p {
+  padding: 0.6em 0;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.popup .content .about-reflex span {
+  display: block;
+}
+.popup .content .about-reflex span:nth-child(2) {
+  color: lime;
+}
+.popup .content .about-reflex span:nth-child(3) {
+  color: orangered;
+}
+.popup .content .about-reflex span:nth-child(4) {
+  color: red;
+}
+
+.popup-shadow {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5019607843);
+  animation: popupAnimation 0.5s;
+}
+
+.active {
+  display: block;
+}
+
+.nav-controls {
+  display: flex;
+}
+.nav-controls p {
+  font-size: 1.4rem;
+  padding: 0 1em;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.3s;
+  font-weight: 200;
+}
+.nav-controls p:first-child {
+  color: #fe2464;
+  font-weight: 400;
+}
+.nav-controls p:first-child:hover {
+  color: #fff;
+}
+.nav-controls p:hover {
+  color: #fe2464;
+}
+
+.wave svg {
+  position: absolute;
+  bottom: -50px;
+  scale: 1;
+  animation: wave 8s ease-in-out alternate infinite;
+}
+
+.crosshairs img {
+  position: absolute;
+  scale: 0.7;
+  opacity: 0.2;
+  animation: crosshair 15s alternate infinite;
+}
+.crosshairs img:nth-child(2) {
+  right: 5%;
+  top: 80px;
+}
+.crosshairs img:nth-child(3) {
+  left: 5%;
+  top: 80px;
+}
+
+@keyframes crosshair {
+  to {
+    right: 50%;
+    top: 120%;
+    rotate: 360deg;
+  }
+}
+@keyframes wave {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 2;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes logo {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.45;
+  }
+}
+@keyframes showPopup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes popupAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 1080px) {
+  .nav-controls {
+    display: none;
+  }
+  .welcome-content a,
+  .welcome-content h2 {
+    display: none;
+  }
+  .welcome-content .block-action {
+    text-align: center;
+    display: inline;
+  }
+  .wave {
+    display: none;
+  }
+}
+@media (min-width: 1080px) {
+  .welcome-content .block-action {
+    display: none;
+  }
+}/*# sourceMappingURL=main.css.map */
