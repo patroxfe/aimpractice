@@ -424,11 +424,15 @@ nav {
 .choose-level-container .choose-level .levels .level ul li span {
   font-weight: bold;
   transition: color 0.3s;
+  color: #fe2464;
   pointer-events: none;
 }
 .choose-level-container .choose-level .levels .level .soon {
   color: #353535;
   text-decoration-line: line-through;
+}
+.choose-level-container .choose-level .levels .level .soon span {
+  color: #353535;
 }
 .choose-level-container .choose-level .levels .level:nth-child(3) {
   border-right: none;

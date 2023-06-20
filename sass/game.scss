@@ -480,13 +480,17 @@ nav {
 						span {
 							font-weight: bold;
 							transition: color 0.3s;
+							color: $primaryColor;
 							pointer-events: none;
 						}
 					}
 				}
 				.soon {
 					color: #353535;
-					text-decoration-line: line-through;
+					text-decoration-line: line-through; 
+					span {
+						color: #353535;
+					}
 				}
 			}
 
